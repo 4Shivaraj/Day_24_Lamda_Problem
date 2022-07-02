@@ -17,6 +17,14 @@ namespace LamdaExpressionProblem
             listPersonInCity.Add(new Person("897865695", "Soma", "126 Tollgate", 17));
             listPersonInCity.Add(new Person("897865696", "Vijay", "128 Mysore", 58));
             listPersonInCity.Add(new Person("897865697", "Cheluvesh", "124 Vijayanagar", 75));
+
+
+            //UC-2
+            Console.WriteLine("Retrieving Top Two Aged persons From List Who Are Older Than 60 Years: ");
+            foreach (Person person in listPersonInCity.FindAll(e => (e.Age >= 60)).Take(2).ToList())
+            {
+                Console.WriteLine("Name: {0} \n Age: {1}", person.Name, person.Age);
+            }
         }
     }
 }
