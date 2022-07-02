@@ -59,6 +59,15 @@ namespace LamdaExpressionProblem
                 Console.WriteLine("Name: {0} \n Age: {1}", persons.Name, persons.Age);
             }
             Console.WriteLine("------------------------------------------------------------------------");
+
+            //UC-7
+            Console.WriteLine("Remove Specific Name From List: ");
+            listPersonInCity.RemoveAll(e => (e.Name == "Cheluvesh"));
+            if (listPersonInCity.TrueForAll(e => e.Name != "Cheluvesh"))
+            {
+                Console.WriteLine("No Person is Having Name 'Cheluvesh'in a list");
+            }
+            Console.WriteLine("------------------------------------------------------------------------");
         }
     }
 }
