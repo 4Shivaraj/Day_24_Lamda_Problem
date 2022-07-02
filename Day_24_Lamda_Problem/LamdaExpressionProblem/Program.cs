@@ -34,6 +34,14 @@ namespace LamdaExpressionProblem
                 Console.WriteLine("Name: {0} \n Age: {1}", person.Name, person.Age);
             }
             Console.WriteLine("------------------------------------------------------------------------");
+
+            //UC-4
+            Console.WriteLine("Getting Average Of All The Person's Age: ");
+            double averageAge = listPersonInCity.Average(e => e.Age);
+            {
+                Console.WriteLine("The Average Of All The Person's Age Is: {0}", averageAge);
+            }
+            Console.WriteLine("------------------------------------------------------------------------");
         }
     }
 }
