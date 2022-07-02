@@ -51,6 +51,14 @@ namespace LamdaExpressionProblem
                 Console.WriteLine("Yes, A person having name 'Arun' exits in our list");
             }
             Console.WriteLine("------------------------------------------------------------------------");
+
+            //UC-6
+            Console.WriteLine("Skipping Every Person Whose Age Is Less Than 60 Years: ");
+            foreach (Person persons in listPersonInCity.FindAll(e => e.Age < 60))
+            {
+                Console.WriteLine("Name: {0} \n Age: {1}", persons.Name, persons.Age);
+            }
+            Console.WriteLine("------------------------------------------------------------------------");
         }
     }
 }
