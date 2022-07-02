@@ -25,6 +25,15 @@ namespace LamdaExpressionProblem
             {
                 Console.WriteLine("Name: {0} \n Age: {1}", person.Name, person.Age);
             }
+            Console.WriteLine("------------------------------------------------------------------------");
+
+            //UC-3
+            Console.WriteLine("Checking Whether any person is teen ager or not: ");
+            foreach (Person person in listPersonInCity.FindAll(e => (e.Age >= 13 && e.Age <= 18)))
+            {
+                Console.WriteLine("Name: {0} \n Age: {1}", person.Name, person.Age);
+            }
+            Console.WriteLine("------------------------------------------------------------------------");
         }
     }
 }
