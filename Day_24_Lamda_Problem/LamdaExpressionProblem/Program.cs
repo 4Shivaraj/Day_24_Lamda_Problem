@@ -42,6 +42,15 @@ namespace LamdaExpressionProblem
                 Console.WriteLine("The Average Of All The Person's Age Is: {0}", averageAge);
             }
             Console.WriteLine("------------------------------------------------------------------------");
+
+            //UC-5
+            Console.WriteLine("Checking whether a person having name 'Arun' Exits or Not: ");
+            if (listPersonInCity.Exists(e => e.Name == "Arun"))
+            {
+                ;
+                Console.WriteLine("Yes, A person having name 'Arun' exits in our list");
+            }
+            Console.WriteLine("------------------------------------------------------------------------");
         }
     }
 }
